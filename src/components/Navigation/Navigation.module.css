@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   /* justify-content: center; */
-  /* justify-content: space-between; */
+  justify-content: space-between;
   gap: 30px;
   padding: 8px 0;
   border-bottom: 1px solid #86baf7;
@@ -11,6 +11,12 @@
 .menu {
   list-style: none;
   display: flex;
+}
+
+.logo {
+  text-decoration: none;
+  color: #86baf7;
+  font-weight: bold;
 }
 
 .link {
