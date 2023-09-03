@@ -10,6 +10,7 @@ function App() {
   useEffect(() => {
     dispatch(current());
   }, [dispatch]);
+
   return (
     <div className={styles.container}>
       <Navigation />
