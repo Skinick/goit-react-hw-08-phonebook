@@ -14,9 +14,15 @@
 }
 
 .logo {
-  text-decoration: none;
-  color: #86baf7;
-  font-weight: bold;
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-70deg, rgb(105, 202, 240), #0566d6);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .link {

@@ -1,3 +1,4 @@
+import styles from './LoginPage.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { getAuthError } from 'redux/auth/auth-selectors';
 import { login } from 'redux/auth/auth-operations';
@@ -12,8 +13,8 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
-      <h2>Login Page</h2>
+    <div className={styles.pagecontainer}>
+      <h2>Login</h2>
       <LoginForm onSubmit={onLogin} />
       {status && <p style={{ color: 'red' }}> Incorrect login or password</p>}
     </div>

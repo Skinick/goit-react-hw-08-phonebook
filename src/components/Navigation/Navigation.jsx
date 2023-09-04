@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Navigation.module.css';
-
+import { FcPhoneAndroid } from 'react-icons/fc';
 import NavBarMenu from './NavbarMenu/NavbarMenu';
 import NavbarAuth from './NavbarAuth/NavbarAuth';
 import NavbarUser from './NavbarUser/NavbarUser';
@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <nav className={styles.wrapper}>
       <Link className={styles.logo} to="/">
-        Logo
+        <FcPhoneAndroid /> Phonebook
       </Link>
       {isLogin && <NavBarMenu />}
       {isLogin ? <NavbarUser /> : <NavbarAuth />}
