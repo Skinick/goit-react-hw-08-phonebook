@@ -5,7 +5,7 @@
 }
 
 .nameuser {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   text-align: center;
   background: linear-gradient(-70deg, rgb(105, 202, 240), #0566d6);
@@ -14,6 +14,9 @@
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
   padding: 8px 26px;
   border-radius: 4px;
   text-decoration: none;
