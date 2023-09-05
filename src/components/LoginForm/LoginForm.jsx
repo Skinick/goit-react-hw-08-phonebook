@@ -1,5 +1,6 @@
-import useForm from 'shared/api/hooks/useForm';
 import styles from './LoginForm.module.css';
+import PropTypes from 'prop-types';
+import useForm from 'shared/api/hooks/useForm';
 import { initialState } from './initialState';
 
 const LoginForm = ({ onSubmit }) => {
@@ -39,10 +40,16 @@ const LoginForm = ({ onSubmit }) => {
         />
       </div>
       <div className={styles.group}>
-        <button className={styles.button} type="submit">Login</button>
+        <button className={styles.button} type="submit">
+          Login
+        </button>
       </div>
     </form>
   );
+};
+
+LoginForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default LoginForm;

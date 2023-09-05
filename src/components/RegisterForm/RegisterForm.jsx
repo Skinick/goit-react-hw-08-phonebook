@@ -1,6 +1,7 @@
 import useForm from 'shared/api/hooks/useForm';
 import styles from './RegisterForm.module.css';
 import { initialState } from './initialState';
+import PropTypes from 'prop-types';
 
 const RegisterForm = ({ onSubmit }) => {
   const { state, handleChange, handleSubmit } = useForm({
@@ -9,7 +10,6 @@ const RegisterForm = ({ onSubmit }) => {
   });
 
   const { name, email, password } = state;
-
   return (
     <form className={styles.form} action="" onSubmit={handleSubmit}>
       <div className={styles.group}>
@@ -23,7 +23,7 @@ const RegisterForm = ({ onSubmit }) => {
           onChange={handleChange}
           className={styles.input}
           type="text"
-          title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
+          title="The name can only contain letters, an apostrophe, a dash, and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc."
           required
         />
       </div>
@@ -50,6 +50,7 @@ const RegisterForm = ({ onSubmit }) => {
           onChange={handleChange}
           className={styles.input}
           type="password"
+          title="Should be at least 7 characters"
           required
         />
       </div>
@@ -60,6 +61,10 @@ const RegisterForm = ({ onSubmit }) => {
       </div>
     </form>
   );
+};
+
+RegisterForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default RegisterForm;
