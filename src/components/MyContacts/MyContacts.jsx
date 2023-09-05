@@ -14,6 +14,7 @@ function MyContacts() {
   const contacts = useSelector(getContacts);
   const isContacts = Boolean(contacts.length);
   const loading = useSelector(getIsLoading);
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchContacts());
