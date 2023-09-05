@@ -1,12 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import Phone from '../HomePage/Images/phone.gif';
 import styles from './HomePage.module.css';
+import 'animate.css';
 
 const HomePage = () => {
   return (
     <main>
       <section className={styles.container}>
-        <h1>Phonebook</h1>
+        <h1 class="animate__animated animate__heartBeat">Phonebook</h1>
 
         <div className={styles.thumb}>
           <div>
