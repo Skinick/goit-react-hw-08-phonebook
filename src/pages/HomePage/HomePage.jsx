@@ -7,7 +7,9 @@ const HomePage = () => {
   return (
     <main>
       <section className={styles.container}>
-        <h1 class="animate__animated animate__heartBeat">Phonebook</h1>
+        <div class="animate__animated animate__heartBeat">
+          <h1 data-text="My contacts">My contacts</h1>
+        </div>
 
         <div className={styles.thumb}>
           <div>
