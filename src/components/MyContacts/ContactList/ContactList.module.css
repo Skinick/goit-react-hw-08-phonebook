@@ -8,3 +8,9 @@
   border-radius: 4px;
   box-shadow: 10px 13px 13px -8px rgba(135, 186, 240, 1);
 }
+
+@media screen and (max-width: 500px) {
+  .list {
+    width: 320px;
+  }
+}
